@@ -1,4 +1,4 @@
-# L2-gazebo
+# l2-gazebo
 
 github manual
 
