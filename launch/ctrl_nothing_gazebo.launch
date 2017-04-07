@@ -23,10 +23,5 @@
 	<param name="mocap/use_pose" value="false"/>
 </node>
 
-<node name="l2_pub_setpoints_att" pkg="l2_gazebo" type="l2_pub_setpoints_att" output="screen">
-
-
-</node>
-
 
 </launch>
