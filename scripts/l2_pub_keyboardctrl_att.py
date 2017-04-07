@@ -22,7 +22,7 @@ class agent(object):
     def calc_cmd_att_thr(self):
         self.cmd_att.header.stamp = rospy.Time.now()
         # self.cmd_att.header.seq = self.count
-        # self.cmd_att.header.frame_id = "abc"
+        # self.cmd_att.header.frame_id = 1
         self.cmd_att.pose.position.x = 0.0
         self.cmd_att.pose.position.y = 0.0
         self.cmd_att.pose.position.z = 10.0
@@ -59,7 +59,7 @@ if __name__ == '__main__':
 
     while not rospy.is_shutdown():
         try:
-            a,b = agent1.calc_cmd_att_thr()
+            agent1.calc_cmd_att_thr()
             agent1.talk()
             rate.sleep()
 
